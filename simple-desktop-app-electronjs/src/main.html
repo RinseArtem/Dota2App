@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dota2App</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/@coreui/icons/css/free.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header-fixed">
+    <nav class="navbar navbar-dark bg-dark justify-content-between">
+        <div class="d2a">
+            Dota<b>2</b>App
+        </div>
+        <ul class="navbar-nav header-control-btns flex-row align-items-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="minimize-button"><i class="cui-window-minimize d-flex" style="line-height: 12px;"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="min-max-button"><i class="cui-window-maximize d-flex" style="line-height: 24px;"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="close-button"><i class="cui-x d-flex" style="line-height: 24px;"></i></a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header">Игровая статистика за последние 30 матчей</div>
+                <div class="card-body">
+                    <table class="table table-radiant">
+                        <tr>
+                            <th>
+                                <img style="width: 20px" src="img/radiant.png" />
+                                <span class="radiant">Radiant</span>
+                            </th>
+                            <th>Ранг</th>
+                            <th>Лучшие герои</th>
+                            <th>
+                                <span data-toggle="tooltip" data-html="true" data-placement="bottom" title="Игр с этим игроком<br /> Побед/Поражений">With W/L</span>
+                            </th>
+                            <th>
+                                <span data-toggle="tooltip" data-html="true" data-placement="bottom" title="Убийства/Смерти/Помощь">K/D/A</span>
+                            </th>
+                            <th>
+                                <span data-toggle="tooltip" data-html="true" data-placement="bottom" title="Золота/Опыта в минуту">GPM/XPM</span>
+                            </th>
+                            <th>
+                                <span data-toggle="tooltip" data-html="true" data-placement="bottom" title="Добито/Денаи">LH/DN</span>
+                            </th>
+                            <th>
+                                <span data-toggle="tooltip" data-html="true" data-placement="bottom" title="Урона по<br /> героям/строениям/лечения">DMG/BLD/HEAL</span>
+                            </th>
+                            <th>
+                                <span data-toggle="tooltip" data-html="true" data-placement="bottom" title="Информация о выбраном герое">Selected hero info</span>
+                            </th>
+                        </tr>
+<!--                        <tr class="" id="%id%">-->
+<!--                            <td>-->
+<!--                                <div class="player">-->
+<!--                                    <img style="width: 20px" src="%avatar%" />-->
+<!--                                    <span>%name%</span>-->
+<!--                                </div>-->
+<!--                            </td>-->
+<!--                            <td>-->
+<!--                                <div class="rank">-->
+<!--                                    <img src="https://www.opendota.com/assets/images/dota2/rank_icons/rank_%rank%.png" />-->
+<!--                                    <img src="https://www.opendota.com/assets/images/dota2/rank_icons/star_%star%.png" />-->
+<!--                                </div>-->
+<!--                            </td>-->
+<!--                            <td>-->
+<!--                                <div class="heroes">-->
+<!--                                    <img src="heroes/%hero_1_id%.png" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<b>За 30 матчей/Все время</b><br /> Побед : 30/20<br />Поражений : 20/20<br />Сыграно:78/23<br /> "/>-->
+<!--                                    <img src="heroes/%hero_2_id%.png" />-->
+<!--                                    <img src="heroes/%hero_3_id%.png" />-->
+<!--                                </div>-->
+<!--                            </td>-->
+<!--                            <td>-->
+<!--                                <p>-->
+<!--                                    <span class="win">%win_with%</span>-->
+<!--                                    /-->
+<!--                                    <span class="lose">%lose_with%</span>-->
+<!--                                </p>-->
+<!--                            </td>-->
+<!--                            <td>-->
+<!--                                <span>%k%/%d%/%a%</span>-->
+<!--                            </td>-->
+<!--                            <td>-->
+<!--                                <span>%gpm%/%xpm%</span>-->
+<!--                            </td>-->
+<!--                            <td>-->
+<!--                                <span>%lh%/%dn%</span>-->
+<!--                            </td>-->
+<!--                            <td>-->
+<!--                                <span>%dmg%/%bld%/%heal%</span>-->
+<!--                            </td>-->
+<!--                            <td>-->
+<!--                                <span>Waiting for a choice...</span>-->
+<!--                            </td>-->
+<!--                        </tr>-->
+                        <tr class="pl p1">
+
+                        </tr>
+                        <tr class="pl p2">
+
+                        </tr>
+                        <tr class="pl p3">
+
+                        </tr>
+                        <tr class="pl p4">
+
+                        </tr>
+                        <tr class="pl p5">
+
+                        </tr>
+                    </table>
+                    <table class="table table-dire">
+
+                        <tr>
+                            <th>
+                                <img style="width: 20px" src="img/dire.png" />
+                                <span class="dire">Dire</span>
+                            </th>
+                            <th>Ранг</th>
+                            <th>Лучшие герои</th>
+                            <th>
+                                <span data-toggle="tooltip" data-html="true" data-placement="bottom" title="Игр с этим игроком<br /> Побед/Поражений">With W/L</span>
+                            </th>
+                            <th>
+                                <span data-toggle="tooltip" data-html="true" data-placement="bottom" title="Убийства/Смерти/Помощь">K/D/A</span>
+                            </th>
+                            <th>
+                                <span data-toggle="tooltip" data-html="true" data-placement="bottom" title="Золота/Опыта в минуту">GPM/XPM</span>
+                            </th>
+                            <th>
+                                <span data-toggle="tooltip" data-html="true" data-placement="bottom" title="Добито/Денаи">LH/DN</span>
+                            </th>
+                            <th>
+                                <span data-toggle="tooltip" data-html="true" data-placement="bottom" title="Урона по<br /> героям/строениям/лечения">DMG/BLD/HEAL</span>
+                            </th>
+                            <th>
+                                <span data-toggle="tooltip" data-html="true" data-placement="bottom" title="Информация о выбраном герое">Selected hero info</span>
+                            </th>
+                        </tr>
+                        <tr class="pl p6">
+
+                        </tr>
+                        <tr class="pl p7">
+
+                        </tr>
+                        <tr class="pl p8">
+
+                        </tr>
+                        <tr class="pl p9">
+
+                        </tr>
+                        <tr class="pl p10">
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="dummy" style="display: none">
+    <p>Начните матч</p>
+    <small>* в основных режимах 5x5 без ботов</small>
+</div>
+<script>
+    window.$ = window.jQuery = require('jquery');
+    require('./render');
+
+</script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+</body>
+</html>
